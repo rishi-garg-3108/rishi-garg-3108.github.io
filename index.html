@@ -48,12 +48,14 @@ Instructions:
       padding: 3rem 1rem;
     }
 
-    .profile-photo {
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 8px; /* square */
-    }
+  .profile-photo {
+    width: 220px;        /* increased size */
+    height: 220px;
+    object-fit: contain; /* IMPORTANT: prevents cropping */
+    border-radius: 8px;
+    background-color: #f5f5f5; /* optional, looks clean */
+  }
+
 
     .header-text h1 {
       font-size: 3rem;
