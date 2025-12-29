@@ -14,100 +14,213 @@ Instructions:
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rishi Garg | Home</title>
   <meta name="description" content="Personal website of Rishi Garg">
-  <!-- Google Font for header -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-  <!-- Font Awesome for social icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pVd0V8+..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="styles.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+
+  <!-- Styles -->
   <style>
-    header h1 {
+    body {
+      margin: 0;
       font-family: 'Poppins', sans-serif;
-      font-weight: 500;
-      font-size: 3rem;
-      margin: 0.5em 0;
+      color: #222;
+      line-height: 1.6;
     }
-    header h2 {
-      font-weight: normal;
-      font-size: 1.25rem;
-      color: #555;
+
+    a {
+      color: inherit;
+    }
+
+    /* ================= HEADER ================= */
+
+    .header-container {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 3rem 1rem;
+    }
+
+    .profile-photo {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px; /* square */
+    }
+
+    .header-text h1 {
+      font-size: 3rem;
+      font-weight: 500;
       margin: 0;
     }
-    .profile-photo {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 1em;
+
+    .header-text h2 {
+      font-size: 1.25rem;
+      font-weight: 400;
+      color: #555;
+      margin: 0.5rem 0 1.2rem;
     }
+
     .cv-link {
       display: inline-block;
-      margin: 1em 0;
-      padding: 0.5em 1em;
+      padding: 0.5rem 1.2rem;
       border: 1px solid #333;
-      text-decoration: none;
       border-radius: 4px;
-    }
-    footer {
-      text-align: center;
-      padding: 2em 0;
-      background-color: #f5f5f5;
-      margin-top: 2em;
-    }
-    .social-links a {
-      margin: 0 0.5em;
       text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    /* ================= SECTIONS ================= */
+
+    section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+
+    /* ================= PROJECTS ================= */
+
+    #projects ul {
+      padding-left: 1.2rem;
+    }
+
+    #projects li {
+      margin-bottom: 0.6rem;
+    }
+
+    /* ================= FOOTER ================= */
+
+    footer {
+      margin-top: 3rem;
+      padding: 2rem 0;
+      background-color: #f5f5f5;
+      text-align: center;
+    }
+
+    .social-links a {
+      margin: 0 0.6rem;
       font-size: 1.5rem;
+      text-decoration: none;
       color: #333;
     }
+
     .social-links a:hover {
-      color: #0073b1; /* example hover color */
+      opacity: 0.7;
+    }
+
+    footer p {
+      margin-top: 1rem;
+      font-size: 0.75rem; /* reduced size */
+      color: #666;
+    }
+
+    /* ================= RESPONSIVE ================= */
+
+    @media (max-width: 768px) {
+      .header-container {
+        flex-direction: column;
+        text-align: center;
+      }
     }
   </style>
 </head>
+
 <body>
-  <header>
-    <img src="mypic2.jpg" alt="Photo of Rishi Garg" class="profile-photo">
-    <h1>RISHI GARG</h1>
-    <h2>MSc Computer Science at University of Paderborn</h2>
-    <a href="Rishi_Garg_CV.pdf" class="cv-link" target="_blank">View my CV</a>
+
+  <!-- HEADER -->
+  <header class="header-container">
+    <img src="mypic2.jpeg" alt="Photo of Rishi Garg" class="profile-photo">
+
+    <div class="header-text">
+      <h1>RISHI GARG</h1>
+      <h2>MSc Computer Science at University of Paderborn</h2>
+      <a href="Rishi_Garg_CV.pdf" class="cv-link" target="_blank">View my CV</a>
+    </div>
   </header>
 
+  <!-- ABOUT -->
   <section id="about">
     <h2>About Me</h2>
-    <p>Hi, I’m **Rishi Garg**—a master’s candidate in Computer Science (AI) and student researcher in Fraunhofer IEM’s GenAI Incubator, 
-      where I build proof-of-concepts in generative AI. My thesis focuses on training and optimising lightweight models to detect
-       LLM-generated text, reflecting my broader interests in deep learning, model efficiency, and GenAI. 
-       Previously, I was the founding member of **Masterji Classes**, an edtech startup, teaching Python and data structures to 100 + students.
-        When I’m not coding, you’ll find me listening to tech podcasts, experimenting with Indian recipes, or nature walking.</p>
-
+    <p>
+      Hi, I’m <strong>Rishi Garg</strong>—an AI Engineer with a master’s degree in Computer Science (AI)
+      from the University of Paderborn. I have worked as a research assistant at
+      <strong>Fraunhofer IEM</strong>, where I contributed as an AI engineer on real-world,
+      industry-driven projects and built proof-of-concepts as part of the GenAI Incubator.
+      My master’s thesis focuses on training and optimising lightweight, explainable models
+      for detecting LLM-generated text, reflecting my broader interests in deep learning,
+      model efficiency, and generative AI.
+    </p>
+    <p>
+      Previously, I was a founding member of <strong>Masterji Classes</strong>, an edtech startup,
+      where I managed core operations, taught Python and data structures to 100+ students,
+      and worked as an ML engineer developing machine learning solutions for student
+      enrollment prediction. When I’m not working, you’ll find me listening to tech podcasts,
+      experimenting with Indian recipes, or enjoying nature walks.
+    </p>
   </section>
 
+  <!-- PROJECTS -->
   <section id="projects">
     <h2>Projects</h2>
     <ul>
-      <li><a href="https://github.com/rishigarg/project1">Project One</a> — Short description.</li>
-      <li><a href="https://github.com/rishigarg/project2">Project Two</a> — Short description.</li>
+      <li>
+        <a href="https://github.com/rishi-garg-3108" target="_blank">
+          Detecting AI-Generated Text
+        </a>
+        — Lightweight and explainable models for AI-text detection.
+      </li>
+      <li>
+        <a href="https://github.com/rishi-garg-3108" target="_blank">
+          Student Enrollment Prediction
+        </a>
+        — ML-driven lead conversion prediction for an edtech startup.
+      </li>
     </ul>
   </section>
 
+  <!-- BLOG -->
   <section id="blog">
     <h2>Blog</h2>
-    <p>Coming soon! You can set up a Jekyll blog by adding Markdown files in the <code>_posts</code> folder.</p>
+    <p>Coming soon.</p>
   </section>
 
+  <!-- CONTACT -->
   <section id="contact">
     <h2>Contact</h2>
-    <p>Feel free to reach out!</p>
+    <p>Feel free to reach out via email or social platforms below.</p>
   </section>
 
+  <!-- FOOTER -->
   <footer>
     <div class="social-links">
-      <a href="https://github.com/rishi-garg-3108" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/rishi-garg-52431815a/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      <a href="https://x.com/RishiGa38914703" target="_blank" aria-label="X"><i class="fab fa-x"></i></a>
-      <a href="mailto:rgarg1571@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/rishi-garg-3108" target="_blank" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/rishi-garg-52431815a/" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://x.com/RishiGa38914703" target="_blank" aria-label="X">
+        <i class="fab fa-x-twitter"></i>
+      </a>
+      <a href="mailto:rgarg1571@gmail.com" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
     </div>
-    <p style="font-size:0.875rem; color:#666;">&copy; 2025 Rishi Garg. All rights reserved</p>
+
+    <p>&copy; 2025 Rishi Garg. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
