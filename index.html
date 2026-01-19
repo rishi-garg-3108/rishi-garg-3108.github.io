@@ -59,6 +59,45 @@ Instructions:
     text-decoration: underline;
   }
 
+  /* ================= PROJECT TIMELINE ================= */
+
+/* Timeline container */
+.timeline {
+  position: relative;
+  margin-left: 1.5rem;
+  border-left: 2px solid var(--border-light);
+}
+
+/* Each timeline item */
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+/* Timeline dot */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  background-color: var(--primary);
+  border-radius: 50%;
+}
+
+/* Timeline content spacing (IMPORTANT FIX) */
+.timeline-content {
+  padding-left: 1.5rem;   /* pushes text away from dot */
+}
+
+/* Project title */
+.timeline-content h3 {
+  margin-top: 0;
+}
+
+
+
     /* ================= HEADER ================= */
 
     .header-container {
@@ -179,7 +218,7 @@ Instructions:
     <h2>About Me</h2>
     <p>
       I am an AI Engineer with a master’s degree in Computer Science (AI)
-      from the University of Paderborn. I have worked as a research assistant at
+      from the University of Paderborn, Germany. I have worked as a research assistant at
       <strong>Fraunhofer IEM</strong>, where I contributed as an AI engineer on real-world,
       industry-driven projects and built proof-of-concepts as part of the GenAI Incubator.
       My master’s thesis focuses on training and optimising lightweight, explainable models
@@ -248,108 +287,133 @@ Instructions:
 
 
 
-  <!-- PROJECTS -->
-
- <!-- PROJECTS-1 -->
+ <!-- PROJECTS -->
 <section id="projects">
   <h2>Projects</h2>
 
-  <div class="project">
-    <h3>
-      <a href="https://github.com/rishi-garg-3108" target="_blank">
-        Detecting AI-Generated Text
-      </a>
-      
-    </h3>
-    <span class="project-year">(2025)</span>
+  <div class="timeline">
 
-    <ul>
-      <li>
-        Fine-tuned BERT and Transformer-based Siamese Neural Network models to
-        classify AI-generated versus human-written tweets.
-      </li>
-      <li>
-        Applied hyperparameter optimization to improve model accuracy,
-        robustness, and generalization.
-      </li>
-      <li>
-        Integrated explainability techniques to interpret model decisions and
-        enhance transparency.
-      </li>
-    </ul>
+    <!-- Project 1 -->
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3>
+          <a href="https://github.com/rishi-garg-3108" target="_blank">
+            Detecting AI-Generated Text
+          </a>
+        </h3>
+        <span>2025</span>
+        <ul>
+          <li>
+            Fine-tuned BERT and Transformer-based Siamese Neural Network models to classify
+            AI-generated versus human-written tweets.
+          </li>
+          <li>
+            Applied hyperparameter optimization to improve model accuracy, robustness, and generalization.
+          </li>
+          <li>
+            Integrated explainability techniques to interpret model decisions and enhance transparency.
+          </li>
+        </ul>
+        <p><strong>Focus:</strong> BERT, Transformers, Hyperparameter Optimization, Explainability</p>
+      </div>
+    </div>
 
-    <p><strong>Focus:</strong> BERT, Transformers, Hyperparameter Optimization, Explainability </p>
-  </div>
+    <!-- Project 2 -->
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3>
+          <a href="https://github.com/rishi-garg-3108" target="_blank">
+            WAGO — Industry-Scale AI Chatbot Development
+          </a>
+        </h3>
+        <span>2025</span>
+        <ul>
+          <li>
+            Generated a large relevant vs. irrelevant question dataset using few-shot prompting based on
+            seed examples provided by WAGO.
+          </li>
+          <li>
+            Fine-tuned and benchmarked BERT and EuroBERT models to build a robust query relevance classifier
+            for an enterprise chatbot.
+          </li>
+        </ul>
+        <p><strong>Focus:</strong> BERT Fine-tuning, NLP, Deep Learning</p>
+      </div>
+    </div>
 
-    <!-- PROJECTS-2 -->
-  <div class="project">
-    <h3>
-      <a href="https://github.com/rishi-garg-3108" target="_blank">
-       WAGO — Industry-Scale AI Chatbot Development
-      </a>
-    </h3>
-    <span class="project-year">(2025)</span>
-    <ul>
-      <li>
-        Generated a large relevant vs. irrelevant question dataset using few-shot prompting, based on a small set of seed
-          examples provided by WAGO.
-      </li>
-      <li>
-        Fine-tuned and benchmarked BERT and EuroBERT models to build a robust query relevance classifier for an
-         enterprise chatbot system.
-      </li>
-      
-    </ul>
-
-    <p><strong>Focus:</strong>  BERT fine-tuning, NLP, Deep Learning</p>
-  </div>
-
-
-  <!-- PROJECTS-3 -->
-  <div class="project">
+   <!-- Project 3 -->
+<div class="timeline-item">
+  <div class="timeline-dot"></div>
+  <div class="timeline-content">
     <h3>
       <a href="https://github.com/rishi-garg-3108" target="_blank">
         Handwriting Recognition and Analysis System
       </a>
     </h3>
-    <span class="project-year">(2024–2025)</span>
+    <span>2024 – 2025</span>
     <ul>
       <li>
-        Developed an MVP web application for handwriting recognition and error analysis, integrating GPT-4o with
-        OpenCV for visual error highlighting.
+        Developed an MVP web application integrating GPT-4o with OpenCV for handwriting recognition
+        and visual error highlighting.
       </li>
       <li>
-        Accepted by Fraunhofer IEM and currently under pilot testing with German school teachers for model validation and
-          usability feedback.
+        Accepted by Fraunhofer IEM and currently under pilot testing with German school teachers
+        for usability feedback and validation.
       </li>
-      
     </ul>
-
-    <p><strong>Focus:</strong> Generative AI, Web development, OpenAI, flask</p>
+    <p><strong>Focus:</strong> Generative AI, Web Development, OpenAI, Flask</p>
   </div>
+</div>
 
-    <!-- PROJECTS-4-->
-  <div class="project">
+<!-- Project 4 -->
+<div class="timeline-item">
+  <div class="timeline-dot"></div>
+  <div class="timeline-content">
     <h3>
       <a href="https://github.com/rishi-garg-3108" target="_blank">
-       requirementsGPT
+        requirementsGPT
       </a>
     </h3>
-    <span class="project-year">(2023)</span>
+    <span>2023</span>
     <ul>
       <li>
-        Developed an agentic AI system using Autogen’s multi-agent collaboration to automate the requirements engineering
-        lifecycle, from persona analysis to system design and formal documentation.
+        Developed an agentic AI system using AutoGen to automate the requirements engineering lifecycle,
+        from persona analysis to system design and formal documentation.
       </li>
-      
     </ul>
-
-    <p><strong>Focus:</strong> Generative AI, Agentic-AI, OpenAI, Streamlit</p>
+    <p><strong>Focus:</strong> Generative AI, Agentic AI, OpenAI, Streamlit</p>
   </div>
+</div>
 
- 
-
-  
+<!-- Project 5 -->
+<div class="timeline-item">
+  <div class="timeline-dot"></div>
+  <div class="timeline-content">
+    <h3>
+      <a href="https://github.com/rishi-garg-3108" target="_blank">
+        SEPE: Student Enrollment Prediction Engine
+      </a>
+    </h3>
+    <span>2023</span>
+    <ul>
+      <li>
+        Developed a production-oriented machine learning system to predict the probability of a lead converting into a paid student enrollment.
+      </li>
+      <li>
+        Implemented data preprocessing, feature engineering, and model evaluation pipelines to ensure high prediction accuracy and reliability.
+      </li>
+      <li>
+        Trained and evaluated a probabilistic classification model.
+      </li>
+      <li>
+        Deployed the model as an API using FastAPI for integration with the company’s CRM system.
+      </li>
+    </ul>
+    <p><strong>Focus:</strong> Machine Learning, Predictive Modeling, Data Science</p>
+  </div>
+</div>
 
 </section>
 
