@@ -82,6 +82,20 @@ Instructions:
   font-weight: 500;
   margin-bottom: 0.4rem;
 }
+.project-meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: #6b7280; /* muted gray */
+  margin-bottom: 0.6rem;
+}
+
+.project-location {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
 
 /* ================= EDUCATION ================= */
 
@@ -362,9 +376,14 @@ Instructions:
       <div class="timeline-dot"></div>
       <div class="timeline-content">
         <h3>
-          <span class="project-title">Detecting AI-Generated Text with Lightweight Explainable Models</span>
+           <span class="project-title">
+        Detecting AI-Generated Text with Lightweight Explainable Models
+      </span>
         </h3>
-        <span>2025</span>
+         <div class="project-meta">
+      <span class="project-year">2025</span>
+      <span class="project-location">📍 University of Paderborn</span>
+    </div>
         <ul>
           <li>
             Fine-tuned BERT and Transformer-based Siamese Neural Network models to classify
@@ -388,7 +407,10 @@ Instructions:
         <h3>
           <span class="project-title">WAGO — Industry-Scale AI Chatbot Development</span>
         </h3>
-        <span>2025</span>
+         <div class="project-meta">
+      <span class="project-year">2025</span>
+      <span class="project-location">📍 Fraunhofer IEM</span>
+    </div>
         <ul>
           <li>
             Generated a large relevant vs. irrelevant question dataset using few-shot prompting based on
@@ -412,7 +434,10 @@ Instructions:
       <span class="project-title">AI-Based Handwriting Recognition and Error Correction System for Education</span>
       
     </h3>
-    <span>2024 – 2025</span>
+    <div class="project-meta">
+      <span class="project-year">2024-2025</span>
+      <span class="project-location">📍 Fraunhofer IEM</span>
+    </div>
     <ul>
       <li>
         Developed an MVP web application integrating GPT-4o with OpenCV to automatically recognize handwritten 
@@ -437,7 +462,10 @@ Instructions:
     <h3>
       <span class="project-title">requirementsGPT</span>
     </h3>
-    <span>2023</span>
+     <div class="project-meta">
+      <span class="project-year">2023</span>
+      <span class="project-location">📍 Fraunhofer IEM</span>
+    </div>
     <ul>
       <li>
         Developed an agentic AI system using AutoGen to automate the requirements engineering lifecycle,
@@ -455,7 +483,10 @@ Instructions:
     <h3>
       <span class="project-title">SEPE: Student Enrollment Prediction Engine</span>
     </h3>
-    <span>2021</span>
+     <div class="project-meta">
+      <span class="project-year">2021</span>
+      <span class="project-location">📍 Masterji Classes</span>
+    </div>
     <ul>
       <li>
         Developed a production-oriented machine learning system to predict the probability of a lead converting into a paid student enrollment.
